@@ -29,40 +29,40 @@
     <main class="page">
       <aside class="sidebar left">
         <section class="card featured-player-card">
-          <div class="section-label">FEATURED PLAYER</div>
-          <div class="featured-player-box">
-            <div class="player-portrait">A</div>
-            <div class="player-meta">
-              <p class="player-subtitle">Player of the week</p>
+          <div class="section-title">FEATURED PLAYER</div>
+          <div class="featured-player-content">
+            <div class="player-image">A</div>
+            <div class="player-info">
+              <p class="muted">Player of the week</p>
               <h3>Arkon</h3>
-              <div class="player-stat">88.9%</div>
+              <div class="main-stat">88.9%</div>
               <span>KAST</span>
             </div>
           </div>
         </section>
 
-        <section class="card compact-card">
-          <div class="section-label">RANKING</div>
-          <ol class="ranking-table">
-            <li><span class="rank">1.</span><span class="team-name">Nova Core</span></li>
-            <li><span class="rank">2.</span><span class="team-name">Iron Pulse</span></li>
-            <li><span class="rank">3.</span><span class="team-name">Crimson V</span></li>
-            <li><span class="rank">4.</span><span class="team-name">Ghostline</span></li>
-            <li><span class="rank">5.</span><span class="team-name">Solaris</span></li>
+        <section class="card panel-card">
+          <div class="section-title">RANKING</div>
+          <ol class="ranking-list">
+            <li><span>1.</span> Nova Core</li>
+            <li><span>2.</span> Iron Pulse</li>
+            <li><span>3.</span> Crimson V</li>
+            <li><span>4.</span> Ghostline</li>
+            <li><span>5.</span> Solaris</li>
           </ol>
-          <a href="#" class="panel-button">Complete ranking</a>
-          <div class="panel-footer">Last updated: 30th of March</div>
+          <a href="#" class="panel-link">Complete ranking</a>
+          <div class="panel-meta">Last updated: 30th of Mar</div>
         </section>
 
-        <section class="card compact-card">
-          <div class="section-label">EVENTS</div>
-          <ul class="events-table">
+        <section class="card panel-card">
+          <div class="section-title">EVENTS</div>
+          <ul class="events-list">
             <li>
               <div>
                 <strong>Strike Masters</strong>
                 <span>Live now</span>
               </div>
-              <span class="live-badge">LIVE</span>
+              <em class="live-tag">LIVE</em>
             </li>
             <li>
               <div>
@@ -72,14 +72,8 @@
             </li>
             <li>
               <div>
-                <strong>BLAST Rivals</strong>
-                <span>22 days</span>
-              </div>
-            </li>
-            <li>
-              <div>
                 <strong>Core League</strong>
-                <span>34 days</span>
+                <span>22 days</span>
               </div>
             </li>
             <li>
@@ -89,27 +83,22 @@
               </div>
             </li>
           </ul>
-          <a href="#" class="panel-button">Event calendar</a>
-        </section>
-
-        <section class="card compact-card">
-          <div class="section-label">TOP PLAYERS</div>
-          <ol class="ranking-table players-mini">
-            <li><span class="rank">1.</span><span class="team-name">Arkon</span></li>
-            <li><span class="rank">2.</span><span class="team-name">BibuX</span></li>
-            <li><span class="rank">3.</span><span class="team-name">TimeAgent</span></li>
-            <li><span class="rank">4.</span><span class="team-name">OSAMAS</span></li>
-            <li><span class="rank">5.</span><span class="team-name">FAZERY</span></li>
-          </ol>
-          <a href="#" class="panel-button">Complete ranking</a>
+          <a href="#" class="panel-link">Event calendar</a>
         </section>
       </aside>
 
       <section class="content">
         <section class="hero card">
-          <div class="hero-badge">LIVE</div>
+          <div class="hero-top">
+            <span class="hero-label">MAIN EVENT</span>
+            <span class="hero-live">LIVE</span>
+          </div>
+
           <h1>Strike Masters 2026</h1>
-          <p>The biggest event in the STRIKETV universe is now underway.</p>
+          <p class="hero-subtext">
+            The biggest tournament in the STRIKETV universe is underway, with
+            the top teams fighting for the championship title.
+          </p>
 
           <div class="hero-tabs">
             <button>Overview</button>
@@ -117,46 +106,118 @@
             <button>Results</button>
             <button>Stats</button>
           </div>
+
+          <div class="hero-footer">
+            <div class="hero-footer-item">
+              <span>Status</span>
+              <strong>Playoffs Stage</strong>
+            </div>
+            <div class="hero-footer-item">
+              <span>Teams</span>
+              <strong>16</strong>
+            </div>
+            <div class="hero-footer-item">
+              <span>Prize Pool</span>
+              <strong>$1,250,000</strong>
+            </div>
+          </div>
         </section>
 
         <section class="featured-news card">
-          <span class="tag">Featured</span>
-          <h2>Nova Core secure finals spot after dominant semi-final win</h2>
+          <div class="article-top">
+            <span class="tag">Featured Story</span>
+            <span class="article-time">1 hour ago</span>
+          </div>
+
+          <h2>Nova Core secure grand final spot after dominant semi-final win</h2>
           <p>
-            Nova Core continue their incredible form and move one step closer to
-            the championship title.
+            Nova Core continue their incredible form with another confident win,
+            setting up a highly anticipated championship clash.
           </p>
         </section>
 
-        <section class="card">
-          <h3>Today's News</h3>
+        <section class="news-block card">
+          <div class="news-header">
+            <h3>Today's News</h3>
+            <a href="#">View all</a>
+          </div>
+
           <ul class="news-list">
-            <li>Arkon drops season-high performance in semi-final clash</li>
-            <li>Ghostline confirm roster change after group stage exit</li>
-            <li>Urban Clash reveals new map pool for spring split</li>
-            <li>Solaris academy rises with back-to-back wins</li>
+            <li>
+              <span class="news-title">Arkon drops season-high performance in semi-final clash</span>
+              <span class="news-time">41 min ago</span>
+            </li>
+            <li>
+              <span class="news-title">Ghostline confirm roster change after group stage exit</span>
+              <span class="news-time">1 hour ago</span>
+            </li>
+            <li>
+              <span class="news-title">Urban Clash reveals new competitive map pool</span>
+              <span class="news-time">2 hours ago</span>
+            </li>
+            <li>
+              <span class="news-title">Solaris academy rises with back-to-back wins</span>
+              <span class="news-time">3 hours ago</span>
+            </li>
+            <li>
+              <span class="news-title">Strike Masters reaches record audience numbers</span>
+              <span class="news-time">5 hours ago</span>
+            </li>
           </ul>
         </section>
       </section>
 
       <aside class="sidebar right">
-        <section class="card">
-          <h3>Today's Matches</h3>
+        <section class="card side-card">
+          <div class="side-header">
+            <h3>Today's Matches</h3>
+            <span class="small-pill">12</span>
+          </div>
+
           <ul class="matches-list">
-            <li><span>Nova Core</span><strong>vs</strong><span>Iron Pulse</span></li>
-            <li><span>Ghostline</span><strong>vs</strong><span>Solaris</span></li>
-            <li><span>Crimson V</span><strong>vs</strong><span>Night Raid</span></li>
-            <li><span>Delta X</span><strong>vs</strong><span>ZeroPoint</span></li>
+            <li>
+              <div>
+                <strong>Nova Core</strong>
+                <span>vs Iron Pulse</span>
+              </div>
+              <em class="match-live">LIVE</em>
+            </li>
+            <li>
+              <div>
+                <strong>Ghostline</strong>
+                <span>vs Solaris</span>
+              </div>
+              <time>20:00</time>
+            </li>
+            <li>
+              <div>
+                <strong>Crimson V</strong>
+                <span>vs Night Raid</span>
+              </div>
+              <time>21:30</time>
+            </li>
+            <li>
+              <div>
+                <strong>Delta X</strong>
+                <span>vs ZeroPoint</span>
+              </div>
+              <time>23:00</time>
+            </li>
           </ul>
         </section>
 
-        <section class="card">
-          <h3>Recent Activity</h3>
+        <section class="card side-card">
+          <div class="side-header">
+            <h3>Recent Activity</h3>
+            <span class="dots">•••</span>
+          </div>
+
           <ul class="activity-list">
             <li>Nova Core fan discussion trending</li>
             <li>Rumors about Ghostline transfer</li>
             <li>Arkon MVP debate gaining attention</li>
             <li>Core League schedule updated</li>
+            <li>Community picks championship favorites</li>
           </ul>
         </section>
       </aside>
