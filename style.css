@@ -35,6 +35,10 @@ a {
   letter-spacing: 1px;
 }
 
+.logo a {
+  color: inherit;
+}
+
 .nav {
   display: flex;
   gap: 22px;
@@ -160,6 +164,10 @@ a {
   overflow: hidden;
 }
 
+.ranking-card {
+  overflow: hidden;
+}
+
 .ranking-list,
 .events-list,
 .news-list,
@@ -172,34 +180,46 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 16px;
-  border-top: 1px solid #253246;
+  padding: 13px 16px;
+  border-top: 1px solid #2b384d;
   color: #e6edf7;
+  background: #1a2230;
 }
 
-.ranking-list li span {
-  color: #85b3ff;
+.ranking-list li:nth-child(even) {
+  background: #18202d;
+}
+
+.rank-number {
+  color: #6fb0ff;
   font-weight: bold;
-  width: 24px;
+  width: 26px;
+  flex-shrink: 0;
+}
+
+.rank-team {
+  color: #dfe8f5;
+  font-weight: 500;
 }
 
 .panel-link {
   display: block;
   text-align: center;
-  background: #2d6ea9;
+  background: #2f6fa8;
   color: white;
   font-weight: bold;
-  padding: 12px;
+  padding: 13px;
   transition: 0.2s ease;
+  border-top: 1px solid #3d7db8;
 }
 
 .panel-link:hover {
-  background: #3b82c4;
+  background: #3e83c2;
 }
 
 .panel-meta {
-  background: #264866;
-  color: #e5efff;
+  background: #294d70;
+  color: #e7f0ff;
   padding: 10px 12px;
   font-size: 13px;
   font-weight: bold;
@@ -481,6 +501,201 @@ a {
   line-height: 1.4;
 }
 
+.ranking-page {
+  max-width: 1450px;
+  margin: 22px auto;
+  padding: 0 18px 30px;
+  display: grid;
+  grid-template-columns: 200px 1fr 220px;
+  gap: 16px;
+  align-items: start;
+}
+
+.ranking-filters,
+.ranking-side {
+  padding: 0;
+  overflow: hidden;
+}
+
+.filter-block {
+  border-top: 1px solid #253246;
+}
+
+.filter-block h4 {
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #d8e2f0;
+  background: #182230;
+}
+
+.filter-block ul {
+  list-style: none;
+}
+
+.filter-block li {
+  padding: 10px 14px;
+  border-top: 1px solid #253246;
+  color: #aeb9c9;
+  cursor: pointer;
+}
+
+.filter-block li.active {
+  color: #7fb1ff;
+  font-weight: bold;
+  background: #131c29;
+}
+
+.ranking-main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ranking-header {
+  padding: 0;
+  overflow: hidden;
+}
+
+.ranking-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #253246;
+}
+
+.ranking-tabs button {
+  background: #1a2432;
+  color: #d8e2f0;
+  border: none;
+  padding: 14px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  border-right: 1px solid #253246;
+}
+
+.ranking-tabs button.active {
+  background: #233953;
+  color: white;
+}
+
+.ranking-title-wrap {
+  padding: 18px;
+}
+
+.ranking-title-wrap h1 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.ranking-full-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ranking-row {
+  background: linear-gradient(180deg, #141c28 0%, #111826 100%);
+  border: 1px solid #243144;
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+.ranking-row-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ranking-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.big-rank {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  min-width: 46px;
+}
+
+.ranking-left h2 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.ranking-left h2 span {
+  font-size: 15px;
+  color: #9dadc0;
+  font-weight: normal;
+}
+
+.ranking-left p {
+  color: #9dadc0;
+  font-size: 14px;
+}
+
+.ranking-change {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.ranking-change.positive {
+  color: #22c55e;
+}
+
+.ranking-change.negative {
+  color: #ef4444;
+}
+
+.ranking-change.neutral {
+  color: #c5cfdd;
+}
+
+.ranking-team-preview {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+
+.mini-player {
+  width: 68px;
+  height: 82px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #36475f, #243144);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.ranking-row-links {
+  display: flex;
+  gap: 24px;
+  border-top: 1px solid #253246;
+  padding-top: 12px;
+}
+
+.ranking-row-links a {
+  color: #86b6ff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.side-activity {
+  padding: 0 14px 14px;
+}
+
+@media (max-width: 1200px) {
+  .ranking-page {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 1150px) {
   .page {
     grid-template-columns: 1fr;
@@ -520,8 +735,17 @@ a {
     font-size: 26px;
   }
 
-  .news-list li {
+  .news-list li,
+  .ranking-row-top {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .ranking-left {
+    align-items: flex-start;
+  }
+
+  .ranking-team-preview {
+    flex-wrap: wrap;
   }
 }
