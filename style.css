@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0f16;
+  color: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topbar {
+  width: 100%;
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff7a00;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #d1d5db;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topbar-right input {
+  background: #1f2937;
+  border: 1px solid #374151;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.signin {
+  color: #60a5fa;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 270px 1fr 280px;
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #151b26;
+  border: 1px solid #222c3d;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.featured-player {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.player-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7a00, #ffae42);
+  color: #0b0f16;
+  font-weight: bold;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-player h4 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.featured-player p {
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.featured-player span {
+  color: #ffb86b;
+  font-size: 14px;
+}
+
+.ranking-list,
+.event-list,
+.news-list,
+.matches-list,
+.activity-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #d1d5db;
+}
+
+.ranking-list li,
+.event-list li,
+.news-list li,
+.activity-list li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #253044;
+}
+
+.matches-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #253044;
+}
+
+.matches-list strong {
+  color: #ff7a00;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero {
+  min-height: 260px;
+  background: linear-gradient(135deg, #0f1b2d, #17263f 60%, #10203a);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin-bottom: 28px;
+}
+
+.hero-tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-tabs button {
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hero-tabs button:hover {
+  background: #2563eb;
+}
+
+.featured-news .tag {
+  display: inline-block;
+  background: #ff7a00;
+  color: #0b0f16;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.featured-news h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.featured-news p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .topbar-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .topbar-right input {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .featured-news h2 {
+    font-size: 22px;
+  }
+}
