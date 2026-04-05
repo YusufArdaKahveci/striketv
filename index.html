@@ -28,37 +28,80 @@
 
     <main class="page">
       <aside class="sidebar left">
-        <section class="card">
-          <h3>Featured Player</h3>
-          <div class="featured-player">
-            <div class="player-avatar">A</div>
-            <div>
-              <h4>Arkon</h4>
-              <p>Player of the Week</p>
-              <span>0.61 impact score</span>
+        <section class="card featured-player-card">
+          <div class="section-label">FEATURED PLAYER</div>
+          <div class="featured-player-box">
+            <div class="player-portrait">A</div>
+            <div class="player-meta">
+              <p class="player-subtitle">Player of the week</p>
+              <h3>Arkon</h3>
+              <div class="player-stat">88.9%</div>
+              <span>KAST</span>
             </div>
           </div>
         </section>
 
-        <section class="card">
-          <h3>Top Rankings</h3>
-          <ol class="ranking-list">
-            <li>Nova Core</li>
-            <li>Iron Pulse</li>
-            <li>Crimson V</li>
-            <li>Ghostline</li>
-            <li>Solaris</li>
+        <section class="card compact-card">
+          <div class="section-label">RANKING</div>
+          <ol class="ranking-table">
+            <li><span class="rank">1.</span><span class="team-name">Nova Core</span></li>
+            <li><span class="rank">2.</span><span class="team-name">Iron Pulse</span></li>
+            <li><span class="rank">3.</span><span class="team-name">Crimson V</span></li>
+            <li><span class="rank">4.</span><span class="team-name">Ghostline</span></li>
+            <li><span class="rank">5.</span><span class="team-name">Solaris</span></li>
           </ol>
+          <a href="#" class="panel-button">Complete ranking</a>
+          <div class="panel-footer">Last updated: 30th of March</div>
         </section>
 
-        <section class="card">
-          <h3>Events</h3>
-          <ul class="event-list">
-            <li>Strike Masters - Live</li>
-            <li>Urban Clash - 6 days</li>
-            <li>Core League - 12 days</li>
-            <li>Nightfall Cup - 18 days</li>
+        <section class="card compact-card">
+          <div class="section-label">EVENTS</div>
+          <ul class="events-table">
+            <li>
+              <div>
+                <strong>Strike Masters</strong>
+                <span>Live now</span>
+              </div>
+              <span class="live-badge">LIVE</span>
+            </li>
+            <li>
+              <div>
+                <strong>Urban Clash</strong>
+                <span>8 days</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>BLAST Rivals</strong>
+                <span>22 days</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Core League</strong>
+                <span>34 days</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Nightfall Cup</strong>
+                <span>36 days</span>
+              </div>
+            </li>
           </ul>
+          <a href="#" class="panel-button">Event calendar</a>
+        </section>
+
+        <section class="card compact-card">
+          <div class="section-label">TOP PLAYERS</div>
+          <ol class="ranking-table players-mini">
+            <li><span class="rank">1.</span><span class="team-name">Arkon</span></li>
+            <li><span class="rank">2.</span><span class="team-name">BibuX</span></li>
+            <li><span class="rank">3.</span><span class="team-name">TimeAgent</span></li>
+            <li><span class="rank">4.</span><span class="team-name">OSAMAS</span></li>
+            <li><span class="rank">5.</span><span class="team-name">FAZERY</span></li>
+          </ol>
+          <a href="#" class="panel-button">Complete ranking</a>
         </section>
       </aside>
 
